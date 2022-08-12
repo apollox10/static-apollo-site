@@ -1,0 +1,22 @@
+{
+	"name": "apollo",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"package": "svelte-kit package",
+		"preview": "vite preview",
+		"lint": "eslint ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/kit": "next",
+		"eslint": "^8.16.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"sass": "^1.54.4",
+		"svelte": "^3.44.0",
+		"svelte-preprocess": "^4.10.7",
+		"vite": "^3.0.0"
+	},
+	"type": "module"
+}
