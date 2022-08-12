@@ -4,7 +4,6 @@
     import WIP from "../components/global/WIP.svelte";
 </script>
 
-
 <body class="homepage">
     <NavHomepage />    
     <WIP />
