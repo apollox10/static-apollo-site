@@ -1,0 +1,150 @@
+{
+  ".svelte-kit/runtime/client/start.js": {
+    "file": "_app/immutable/start-928f7bec.js",
+    "src": ".svelte-kit/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-e44c4329.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/runtime/components/layout.svelte",
+      "src/routes/__error.svelte",
+      "src/routes/about/index.svelte",
+      "src/routes/games/index.svelte",
+      "src/routes/index.svelte",
+      "src/routes/learn/index.svelte",
+      "src/routes/news/index.svelte",
+      "src/routes/tech/index.svelte"
+    ]
+  },
+  ".svelte-kit/runtime/components/layout.svelte": {
+    "file": "_app/immutable/layout.svelte-d4b3e9f7.js",
+    "src": ".svelte-kit/runtime/components/layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-e44c4329.js"
+    ]
+  },
+  "src/routes/__error.svelte": {
+    "file": "_app/immutable/pages/__error.svelte-9dcad298.js",
+    "src": "src/routes/__error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-e44c4329.js",
+      "_nav-homepage-b27f5739.js",
+      "_nav-3924a9a9.js"
+    ],
+    "css": [
+      "_app/immutable/assets/__error-21aeec0b.css"
+    ]
+  },
+  "src/routes/about/index.svelte": {
+    "file": "_app/immutable/pages/about/index.svelte-d88400fe.js",
+    "src": "src/routes/about/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-e44c4329.js",
+      "_nav-3924a9a9.js",
+      "_footer-ea4aa716.js"
+    ]
+  },
+  "src/routes/games/index.svelte": {
+    "file": "_app/immutable/pages/games/index.svelte-048e8a9d.js",
+    "src": "src/routes/games/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-e44c4329.js",
+      "_nav-3924a9a9.js",
+      "_footer-ea4aa716.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "_app/immutable/pages/index.svelte-f3ed25dc.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-e44c4329.js",
+      "_nav-homepage-b27f5739.js",
+      "_footer-ea4aa716.js",
+      "_nav-3924a9a9.js"
+    ]
+  },
+  "src/routes/learn/index.svelte": {
+    "file": "_app/immutable/pages/learn/index.svelte-3e032d4e.js",
+    "src": "src/routes/learn/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-e44c4329.js",
+      "_nav-3924a9a9.js",
+      "_footer-ea4aa716.js"
+    ]
+  },
+  "src/routes/news/index.svelte": {
+    "file": "_app/immutable/pages/news/index.svelte-5fa0e137.js",
+    "src": "src/routes/news/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-e44c4329.js",
+      "_nav-3924a9a9.js",
+      "_footer-ea4aa716.js"
+    ]
+  },
+  "src/routes/tech/index.svelte": {
+    "file": "_app/immutable/pages/tech/index.svelte-e56812c1.js",
+    "src": "src/routes/tech/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-e44c4329.js",
+      "_nav-3924a9a9.js",
+      "_footer-ea4aa716.js"
+    ]
+  },
+  "_index-e44c4329.js": {
+    "file": "_app/immutable/chunks/index-e44c4329.js"
+  },
+  "_nav-homepage-b27f5739.js": {
+    "file": "_app/immutable/chunks/nav-homepage-b27f5739.js",
+    "imports": [
+      "_index-e44c4329.js",
+      "_nav-3924a9a9.js"
+    ]
+  },
+  "_nav-3924a9a9.js": {
+    "file": "_app/immutable/chunks/nav-3924a9a9.js",
+    "imports": [
+      "_index-e44c4329.js"
+    ],
+    "css": [
+      "_app/immutable/assets/nav-57db49c6.css"
+    ]
+  },
+  "_footer-ea4aa716.js": {
+    "file": "_app/immutable/chunks/footer-ea4aa716.js",
+    "imports": [
+      "_index-e44c4329.js"
+    ],
+    "css": [
+      "_app/immutable/assets/footer-3e65f38b.css"
+    ]
+  },
+  "src/routes/__error.css": {
+    "file": "_app/immutable/assets/__error-21aeec0b.css",
+    "src": "src/routes/__error.css"
+  },
+  "footer.css": {
+    "file": "_app/immutable/assets/footer-3e65f38b.css",
+    "src": "footer.css"
+  },
+  "nav.css": {
+    "file": "_app/immutable/assets/nav-57db49c6.css",
+    "src": "nav.css"
+  }
+}
