@@ -1,12 +1,12 @@
 <script>
-    import NavGames from "../../components/games/nav-games.svelte";
-    import WIP from "../../components/global/WIP.svelte";
-    import Footer from "../../components/global/footer.svelte";
+    import WIP from "$lib/global/WIP.svelte";
 </script>
  
+<svelte:head>
+    <title>Apollo Games</title>
+</svelte:head>
+
 <body>
-    <NavGames />
     <WIP />
-    <Footer --link-color = "var(--games)"/>
 </body>
 

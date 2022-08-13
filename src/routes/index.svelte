@@ -1,13 +1,12 @@
 <script>
-    import NavHomepage from "../components/homepage/nav-homepage.svelte";
-    import Footer from "../components/global/footer.svelte";
-    import WIP from "../components/global/WIP.svelte";
+    import WIP from "$lib/global/WIP.svelte";
 </script>
 
-<body class="homepage">
-    <NavHomepage />    
+<svelte:head>
+    <title>Apollox</title>
+</svelte:head>
+
+<body>
     <WIP />
-    <Footer --link-color = "var(--white)"/>
-    
 </body>
 

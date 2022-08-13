@@ -129,7 +129,7 @@
             padding: 50px 0;
             align-items: center;
             font-size: 25px;
-
+            z-index: 1;
             transition: 0.5s;
         }
 

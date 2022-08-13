@@ -1,12 +1,12 @@
 <script>
-    import NavLearn from "../../components/learn/nav-learn.svelte";
-    import WIP from "../../components/global/WIP.svelte";
-    import Footer from "../../components/global/footer.svelte";
+    import WIP from "$lib/global/WIP.svelte";
 </script>
  
+<svelte:head>
+    <title>Apollo Learn</title>
+</svelte:head>
+
 <body>
-    <NavLearn />
     <WIP />
-    <Footer --link-color = "var(--learn)"/>
 </body>
 

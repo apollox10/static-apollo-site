@@ -1,11 +1,12 @@
 <script>
-    import NavTech from "../../components/tech/nav-tech.svelte"
-    import WIP from "../../components/global/WIP.svelte";
-    import Footer from "../../components/global/footer.svelte";
+    import WIP from "$lib/global/WIP.svelte";
 </script>
 
-<body class="tech">
-    <NavTech />    
+<svelte:head>
+    <title>Apollo Tech</title>
+</svelte:head>
+
+
+<body> 
     <WIP />
-    <Footer --link-color = "var(--tech)"/>
 </body>

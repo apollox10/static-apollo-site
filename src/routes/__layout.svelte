@@ -1,8 +1,13 @@
 <script>
-    import Nav from "../global/nav.svelte";
+    import Nav from "$lib/global/nav.svelte";
+    import Footer from "$lib/global/footer.svelte";
 </script>
 
-<div class="parent">
+<svelte:head>
+    <link rel="icon" type="image/x-icon" href="/head-icons/homepage.png">
+</svelte:head>
+
+<header>
     <Nav 
         class = "nav"
         title = "Apollox"
@@ -31,4 +36,10 @@
         --about-hover = "var(--about)"
         --about-background = "var(--darkGray)"
     />
-</div>
+</header>
+<main>
+    <slot></slot>
+</main>
+<footer>
+    <Footer --link-color = "var(--white)"/>
+</footer>
