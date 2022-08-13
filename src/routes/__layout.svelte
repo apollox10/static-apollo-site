@@ -9,7 +9,6 @@
 
 <header>
     <Nav 
-        class = "nav"
         title = "Apollox"
         route = "/"
         

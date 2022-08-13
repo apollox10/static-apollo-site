@@ -1,14 +1,19 @@
 <script>
     export let title, route
-    let hide = true;
+    let show = false;
 </script>
-
-<nav class={$$props.class}>
+<nav class="nav">
+    <div class="{show ? "cont-show" : "cont-hide"}">
+        <div class="title-container">
+            <a class="title" href="{route}">{title}</a>
+        </div>
+        <img class="menu-icon" src="/hamburger-menu.svg" alt="Menu" on:click="{() => show = !show}">
+    </div>
     <div class="title-container">
         <a class="title" href="{route}">{title}</a>
     </div>
     <!--Navegation links-->
-    <div class="{hide ? "links-container hide" : "links-container"}">
+    <div class="links-container {show ? "show" : "hide"}">
         <a class="homepage-link nav-link" href="/">Inicio</a>
         <a class="tech-link nav-link" href="/tech">Tecnología</a>
         <a class="news-link nav-link" href="/news">Noticias</a>
@@ -16,7 +21,8 @@
         <a class="learn-link nav-link" href="/learn">Aprendizaje</a>
         <a class="about-link nav-link" href="/about">Proyecto Apollo</a>
     </div>
-    <img class="menu-icon" src="/hamburger-menu.svg" alt="Menu" on:click="{() => hide = !hide}">
+    <img class="menu-icon" src="/hamburger-menu.svg" alt="Menu" on:click="{() => show = !show}">
+    
 </nav>
 
 <style>
@@ -25,6 +31,8 @@
         display: flex;
         width: 100%;
         align-items: center;
+        width: 100%;
+        height: 61px;
         background-color: var(--nav);
         box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.1);
     }
@@ -35,6 +43,7 @@
         margin-left: 10px;
         height: 40px;
         flex: 1;
+        z-index: 10;
     }
 
     .title:link, .title:visited{
@@ -125,7 +134,7 @@
             position: fixed;
             width: 100%;
             height: calc(100vh - 60px);
-            top: 60px;
+            top: calc(60px + 100%);
             padding: 50px 0;
             align-items: center;
             font-size: 25px;
@@ -141,6 +150,7 @@
         .menu-icon{
             width: 50px;
             margin-right: 10px;
+            z-index: 1;
         }
 
         .menu-icon:hover, .menu-icon:active{
@@ -150,15 +160,33 @@
             transition: .2s;
         }
 
-        .hide{
-            top: calc(60px + 100%);
+        .show{
+            top: 61px;
             transition: 0.5s;
+       
+            width: 100vw;
+            z-index: 10000000;
+        }
+        .fixed{
+            position: absolute;
+            top: 0px;
+            transition: 1s;
         }
 
-    @media only screen and (max-height : 650px) {
-        .smallViewMessage{
-            display: inline;
-        }
     }
+
+    .cont-hide{
+        z-index: 0;
+        display: none;
+        color: var(--tech);
+    }
+    .cont-show{
+        position: fixed;
+        display: flex;
+        color: var(--nav);
+        background-color: var(--nav);
+        height: 61px;
+        width: 100%;
+        z-index: 20;
     }
 </style>
