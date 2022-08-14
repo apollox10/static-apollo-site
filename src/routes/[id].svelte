@@ -1,3 +1,4 @@
+<!--
 <script context="module">
     export async function load({fetch, params}){
         const id = params.id
@@ -33,3 +34,4 @@
         margin-top: 40px;
     }
 </style>
+-->
