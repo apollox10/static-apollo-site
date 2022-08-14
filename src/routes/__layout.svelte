@@ -16,6 +16,7 @@
         --link-color = "var(--homepage)"
         --link-hover-color = "var(--white)"
         --link-hover-background = "var(--darkGray)"
+        --title-mobile = "var(--darkGray)"
 
         --homepage-hover = "var(--white)"
         --homepage-background = "var(--homepage)"

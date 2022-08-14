@@ -118,7 +118,7 @@
     @media only screen and (max-width : 1000px){
         
         .title:link, .title:visited{
-            color: var(--darkGray);
+            color: var(--title-mobile);
         }
 
         a:link, a:visited{
@@ -167,12 +167,6 @@
             width: 100vw;
             z-index: 10000000;
         }
-        .fixed{
-            position: absolute;
-            top: 0px;
-            transition: 1s;
-        }
-
     }
 
     .cont-hide{
