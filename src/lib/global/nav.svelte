@@ -24,6 +24,7 @@
         <a class="games-link nav-link" href="/games">Juegos</a>
         <a class="learn-link nav-link" href="/learn">Aprendizaje</a>
         <a class="about-link nav-link" href="/about">Proyecto Apollo</a>
+        <a href="/test">Test</a>
     </div>
     <div class="icon-container" on:click="{() => show = !show}">
         <span class="material-symbols-outlined">
