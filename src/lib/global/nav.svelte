@@ -7,7 +7,11 @@
         <div class="title-container">
             <a class="title" href="{route}">{title}</a>
         </div>
-        <img class="menu-icon" src="/hamburger-menu.svg" alt="Menu" on:click="{() => show = !show}">
+        <div class="icon-container" on:click="{() => show = !show}">
+            <span class="material-symbols-outlined">
+            menu
+            </span>
+        </div>
     </div>
     <div class="title-container">
         <a class="title" href="{route}">{title}</a>
@@ -21,12 +25,25 @@
         <a class="learn-link nav-link" href="/learn">Aprendizaje</a>
         <a class="about-link nav-link" href="/about">Proyecto Apollo</a>
     </div>
-    <img class="menu-icon" src="/hamburger-menu.svg" alt="Menu" on:click="{() => show = !show}">
+    <div class="icon-container" on:click="{() => show = !show}">
+        <span class="material-symbols-outlined">
+        menu
+        </span>
+    </div>
     
 </nav>
 
 <style>
 
+    span{
+        text-align: center;
+        font-size: 40px;
+        color: var(--link-color);
+    }
+
+    span:hover{
+        color: var(--icon-hover);
+    }
     .nav{
         display: flex;
         width: 100%;
@@ -108,7 +125,7 @@
             background-color: var(--about-background);
         }
 
-        .menu-icon{
+        .icon-container{
             display: none;
         }
 
@@ -147,17 +164,20 @@
             background-color: var(--white);
         } 
 
-        .menu-icon{
+        .icon-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 50px;
             margin-right: 10px;
             z-index: 1;
+            transition: .5s;
+            border-radius: 10px;
         }
 
-        .menu-icon:hover, .menu-icon:active{
-            border-radius: 10px;
-            filter: invert(100%);
-            background-color: rgb(255, 255, 255, 0.4);
-            transition: .2s;
+        .icon-container:hover, .icon-container:active{
+            background-color: var(--icon-background);
+            transition: .5s;
         }
 
         .show{
@@ -177,6 +197,7 @@
     .cont-show{
         position: fixed;
         display: flex;
+        align-items: center;
         color: var(--nav);
         background-color: var(--nav);
         height: 61px;

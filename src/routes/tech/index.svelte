@@ -8,5 +8,5 @@
 
 
 <body> 
-    <WIP />
+    <WIP --icon-color="var(--white)"/>
 </body>
