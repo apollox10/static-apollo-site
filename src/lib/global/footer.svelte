@@ -1,5 +1,5 @@
 <footer>
-    El apoyo va en camino...    
+    Copyright © 2022 Apollox10 | All rights reserved.
 </footer>
 
 <style>
@@ -7,10 +7,11 @@
         margin: 50px auto;
         text-align: center;
     }
-
+    /*
     a:link, a:visited{
         color: var(--link-color);
         text-decoration: none;
         font-weight: bold;
     }
+    */
 </style>

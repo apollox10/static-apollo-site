@@ -37,6 +37,6 @@
 
 body{
     margin: 0;
-    background-color: var(--darkGray);
+    background-color: var(--black);
     color: var(--white);
 }
