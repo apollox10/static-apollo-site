@@ -43,3 +43,9 @@
 <footer>
     <Footer --link-color = "var(--news)"/>
 </footer>
+
+<style>
+    main{
+        min-width: 500px;
+    }
+</style>

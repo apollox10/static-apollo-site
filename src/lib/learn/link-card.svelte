@@ -42,14 +42,16 @@
 
     .details{
         display: flex;
+        align-items: center;
         gap: 50px;
     }
 
     img{
         width: 100px;
+        margin: 5px 0;
     }
 
-    @media only screen and (max-width:500px){
+    @media only screen and (max-width:900px){
         img{
             display: none;
         }

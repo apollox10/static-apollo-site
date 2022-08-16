@@ -49,7 +49,7 @@
         width: 100%;
         align-items: center;
         width: 100%;
-        min-width: 350px;
+        min-width: 540px;
         height: 61px;
         background-color: var(--nav);
         box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.1);
@@ -185,7 +185,8 @@
             top: 61px;
             transition: 0.5s;
        
-            width: 100vw;
+            width: 100%;
+            height: 100%;
             z-index: 10000000;
         }
     }

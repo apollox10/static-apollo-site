@@ -41,3 +41,9 @@
 <footer>
     <Footer --link-color = "var(--games)"/>
 </footer>
+
+<style>
+    main{
+        min-width: 500px;
+    }
+</style>

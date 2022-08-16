@@ -1,32 +1,36 @@
 <script>
     import LinkCard from "./link-card.svelte";
     export let title = "Recursos"
+    export let cards = []
 </script>
 
 <div class="links">
-    <h1>{title}</h1>
-    <div class="cards">
-        <LinkCard 
-        title = "Programación desde 0"
-        text = "Recursos utilizados o útiles para el cruso de programación desde cero, donde cualquiera, sin tener conocimiento previo puede adentrarse en el mundo de la programación"
-        url = "/learn/cursos/programacion-desde-cero"
-        --card-color = "var(--darkGray)"
-        --text-color = "var(--white)"
-        --title-color = "var(--learn)"
-        />
+    <slot name="title">
+        <h1>{title}</h1>
+    </slot>
+    <div name="cards" class="cards">
+        {#each cards as card}
+            <LinkCard
+                title = {card.title}
+                text = {card.text}
+                image = {card.image}
+                url = {card.url}
+                --card-color = {card.color}
+                --text-color = {card.textColor}
+                --title-color = {card.titleColor}
+            />
+        {:else}
+            <h2>No hay ningun elemento para mostrar 😥</h2>    
+        {/each}
+        
     </div>
     
 </div>
 
 <style>
-    h1{
-        text-align: left;
-        height: 70px;
-        transition: 1s;
-        padding-bottom: 10px;
-        margin-bottom: 0;
-        margin: 0 20px;
-        transition: 1s;
+    
+    h2{
+        text-align: center;
     }
 
     .cards{

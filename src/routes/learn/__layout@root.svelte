@@ -42,3 +42,9 @@
 <footer>
     <Footer --link-color = "var(--learn)"/>
 </footer>
+
+<style>
+    main{
+        min-width: 500px;
+    }
+</style>

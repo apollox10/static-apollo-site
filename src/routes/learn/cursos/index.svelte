@@ -1,7 +1,7 @@
 <script>
     import SourcesList from "$lib/learn/sources-list.svelte";
-    
-    export let coursesCards = [
+
+    export let cards = [
         {
             title: "Programación desde 0",
             text: "Curso de programación desde cero, donde cualquiera, sin tener conocimiento previo puede adentrarse en el mundo de la programación. El lenguaje de programación utilizado es C++. No es recomendado para personas que ya sepan programar, a menos de que quieran reforzar conocimientos o aprender sobre C y C++.",
@@ -10,65 +10,39 @@
             color : "var(--darkGray)",
             textColor: "var(--white)",
             titleColor: "var(--learn)"
+        },
+        {
+            title: "(Próximamente) Programación Orientada a Objetos e Interfaces Gráficas",
+            text: 'Curso de nivel "intermedio" enfocado a aprender sobre la Programación Orientada a objetos usando C++ y Java, y utilizar esos conocimientos para diseñar interfaces gráficas en Python y C#. No recomendado para principiantes, los alumnos deberán tener al menos conocimientos básicos de programación antes de tomarlo.',
+            image: "https://www.reshot.com/preview-assets/icons/8XE5WD67JA/programming-8XE5WD67JA.svg",
+            url: "",
+            color : "var(--black)",
+            textColor: "var(--white)",
+            titleColor: "rgb(255,127,0,1)"
         }
-    ]
-    export let sourcesCards = [
-        
     ]
 </script>
  
 <svelte:head>
-    <title>Apollo Learn</title>
+    <title>Cursos | Apollo Learn</title>
 </svelte:head>
 
-<div class="main">
-    <SourcesList cards = {coursesCards}>
+<main>
+    <SourcesList {cards}>
         <h1 slot="title">
-            Últimos <a href="/learn/cursos">Cursos de Programación</a>
-        </h1>
-    </SourcesList>
-    <SourcesList cards = {sourcesCards}>
-        <h1 slot="title">
-            Medios para <a href="/learn/cursos">Aprender a Programar</a>
+            Cursos de Programación
         </h1>
     </SourcesList>
 
-</div>
+</main>
 
 <style>
-    .main{
-        min-width: 500px;
+    main{
+        min-width: 500;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
         gap: 30px;
         padding: 20px 20px;
     }    
-
-    h1{
-        text-align: left;
-        height: 80px;
-        transition: 1s;
-        padding-bottom: 10px;
-        margin-bottom: 0;
-        margin: 0 20px;
-        transition: 1s;
-    }
-
-    a{
-        text-decoration: none;
-        color: var(--learn);
-    }
-
-    a:hover{
-        filter: brightness(120%);
-    }
-    @media only screen and (max-width: 650px){
-        h1{
-            text-align: center;
-            margin-bottom: 0px;
-            height: auto;
-            transition: 1s;
-        }
-    }
 </style>
 
