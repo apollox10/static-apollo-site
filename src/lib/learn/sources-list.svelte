@@ -3,7 +3,7 @@
     export let title = "Recursos"
 </script>
 
-<div links>
+<div class="links">
     <h1>{title}</h1>
     <div class="cards">
         <LinkCard 
@@ -14,7 +14,6 @@
         --text-color = "var(--white)"
         --title-color = "var(--learn)"
         />
-        
     </div>
     
 </div>
@@ -22,8 +21,11 @@
 <style>
     h1{
         text-align: left;
-        height: 50px;
-        margin-bottom: 20px;
+        height: 70px;
+        transition: 1s;
+        padding-bottom: 10px;
+        margin-bottom: 0;
+        margin: 0 20px;
         transition: 1s;
     }
 
@@ -33,10 +35,25 @@
         gap: 20px;
     }
 
+    .links{
+        background-color: rgba(255, 255, 255, 0.02);
+        background-blend-mode: overlay;
+        border-radius: 10px;
+        padding: 20px;
+        padding-top: 0;
+        transition: 1s;
+    }
+
     @media only screen and (max-width:800px){
         h1{
             text-align: center;
-            margin-bottom: 70px;
+            margin-bottom: 60px;
+            transition: 1s;
+        }
+
+        .links{
+            padding: 0;
+            padding-top: 10px;
             transition: 1s;
         }
     }

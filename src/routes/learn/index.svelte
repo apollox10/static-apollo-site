@@ -17,8 +17,8 @@
     main{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 50px;
-        padding: 20PX 40px;
+        gap: 30px;
+        padding: 20px 20px;
     }    
 </style>
 
