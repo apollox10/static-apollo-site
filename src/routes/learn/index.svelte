@@ -1,20 +1,7 @@
 <script>
-    import SourcesList from "$lib/learn/sources-list.svelte";
+    import CursosList from "$lib/learn/cursos/cursos-list.svelte";
+    import MediosList from "$lib/learn/otros-medios/medios-list.svelte";
     
-    export let coursesCards = [
-        {
-            title: "Programación desde 0",
-            text: "Curso de programación desde cero, donde cualquiera, sin tener conocimiento previo puede adentrarse en el mundo de la programación. El lenguaje de programación utilizado es C++. No es recomendado para personas que ya sepan programar, a menos de que quieran reforzar conocimientos o aprender sobre C y C++.",
-            image: "https://www.reshot.com/preview-assets/icons/3GNMVZCSDU/coding-3GNMVZCSDU.svg",
-            url: "/learn/cursos/programacion-desde-cero",
-            color : "var(--darkGray)",
-            textColor: "var(--white)",
-            titleColor: "var(--learn)"
-        }
-    ]
-    export let sourcesCards = [
-        
-    ]
 </script>
  
 <svelte:head>
@@ -22,53 +9,31 @@
 </svelte:head>
 
 <div class="main">
-    <SourcesList cards = {coursesCards}>
-        <h1 slot="title">
-            Últimos <a href="/learn/cursos">Cursos de Programación</a>
-        </h1>
-    </SourcesList>
-    <SourcesList cards = {sourcesCards}>
-        <h1 slot="title">
-            Medios para <a href="/learn/cursos">Aprender a Programar</a>
-        </h1>
-    </SourcesList>
+    <CursosList>
+        <h1 slot="title"><a href="/learn/cursos">Cursos de Programación</a></h1>
+    </CursosList>
+
+    <MediosList>
+        <h1 slot="title"><a href="/learn/otros-medios">Otros Medios Recomendados</a></h1>
+    </MediosList>
 
 </div>
 
 <style>
     .main{
-        min-width: 500px;
+        min-width: 310px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-        gap: 30px;
-        padding: 20px 20px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 10px;
+        padding: 0 20px;
     }    
-
-    h1{
-        text-align: left;
-        height: 80px;
-        transition: 1s;
-        padding-bottom: 10px;
-        margin-bottom: 0;
-        margin: 0 20px;
-        transition: 1s;
-    }
 
     a{
         text-decoration: none;
         color: var(--learn);
     }
-
     a:hover{
-        filter: brightness(120%);
-    }
-    @media only screen and (max-width: 650px){
-        h1{
-            text-align: center;
-            margin-bottom: 0px;
-            height: auto;
-            transition: 1s;
-        }
+        color: var(--white);
     }
 </style>
 

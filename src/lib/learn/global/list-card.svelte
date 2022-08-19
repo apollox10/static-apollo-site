@@ -2,17 +2,20 @@
     export let  title = "Titulo", 
                 image = "https://www.reshot.com/preview-assets/icons/3GNMVZCSDU/coding-3GNMVZCSDU.svg", 
                 text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione accusamus aspernatur natus quidem id recusandae ipsum enim tempore amet tenetur, saepe in facere asperiores. Laborum, perspiciatis quod? Quis, vero magni.",
-                url = ""
+                url = "",
+                titleCentered = false,
+                external = false
+
     
 </script>
 
-<a href="{url}">
-    <div class="card">
-        <h1>{title}</h1>
-        <div class="details">
+<a href="{url}" class="card" target="{external ? "_blank" : "_self"}">
+    <h1 class="{titleCentered ? "text-centered" : ""}">{title}</h1>
+    <div class="details">
+        <div class="image">
             <img src="{image}" alt="{title}">
-            <p>{text}</p>
         </div>
+        <p>{text}</p>
     </div>
 </a>
 
@@ -38,21 +41,28 @@
         color: var(--title-color);
         font-weight: 400;
         margin: 10px 0;
+        font-size: 1.8rem;
+    }
+
+    .text-centered{
+        text-align: center;
     }
 
     .details{
         display: flex;
         align-items: center;
-        gap: 50px;
+        justify-content: center;
+        gap: 30px;
     }
 
     img{
         width: 100px;
+        max-height: 100px;
         margin: 5px 0;
     }
 
-    @media only screen and (max-width:900px){
-        img{
+    @media only screen and (max-width:1000px){
+        .image{
             display: none;
         }
     }

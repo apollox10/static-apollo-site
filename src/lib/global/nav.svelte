@@ -17,7 +17,7 @@
         <a class="title" href="{route}">{title}</a>
     </div>
     <!--Navegation links-->
-    <div class="links-container {show ? "show" : "hide"}">
+    <div class="links-container {show ? "show" : "hide"}"  on:mouseup="{() => show = !show}">
         <a class="homepage-link nav-link" href="/">Inicio</a>
         <a class="tech-link nav-link" href="/tech">Tecnología</a>
         <a class="news-link nav-link" href="/news">Noticias</a>
@@ -49,7 +49,7 @@
         width: 100%;
         align-items: center;
         width: 100%;
-        min-width: 540px;
+        min-width: 350px;
         height: 61px;
         background-color: var(--nav);
         box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.1);
@@ -158,6 +158,11 @@
             font-size: 25px;
             z-index: 1;
             transition: 0.5s;
+        }
+
+        .nav-link{
+            width: 15rem;
+            text-align: center;
         }
 
         .nav-link:hover{

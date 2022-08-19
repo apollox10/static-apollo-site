@@ -6,7 +6,7 @@
     footer{
         margin: 50px auto;
         text-align: center;
-        min-width: 540px;
+        min-width: 350px;
     }
     /*
     a:link, a:visited{
