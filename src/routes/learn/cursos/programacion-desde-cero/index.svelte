@@ -59,6 +59,12 @@
     .cards{
         display: grid;
         gap: 20px;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    @media only screen and (max-width: 600px){
+        h1{
+            text-align: center;
+        }
     }
 </style>
