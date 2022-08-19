@@ -44,6 +44,6 @@
 
 <style>
     main{
-        min-width: 500px;
+        min-width: 350px;
     }
 </style>
