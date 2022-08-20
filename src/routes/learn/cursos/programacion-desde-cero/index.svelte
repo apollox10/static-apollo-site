@@ -6,7 +6,7 @@
             title: "1. Instalando Visual Studio Code y C++",
             titleCentered : true,
             text: "",
-            image : "https://code.visualstudio.com/assets/images/code-stable.png",
+            image : "/learn/cursos/programacion-desde-cero/instalando-cpp-y-vs-code/vscode.png",
             url : "/learn/cursos/programacion-desde-cero/instalando-cpp-y-vs-code",
             color : "var(--darkGray)",
             textColor: "var(--white)",
@@ -21,7 +21,7 @@
             color : "var(--darkGray)",
             textColor: "var(--white)",
             titleColor: "var(--white)"
-        },
+        }
     ]
 
 </script>
@@ -49,6 +49,8 @@
 
 <style>
     .body{
+        color: var(--white);
+        background-color: var(--black);
         padding: 20px 50px;
     }
 

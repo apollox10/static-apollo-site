@@ -45,6 +45,8 @@
 
 <style>
     main{
+        color: var(--darkGray);
+        background-color: var(--white);
         min-width: 350px;
     }
 </style>

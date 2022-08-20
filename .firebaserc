@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "apollo-site-e1dc0"
-  }
+  },
+  "targets": {
+    "apollo-site-e1dc0": {
+      "hosting": {
+        "nexus": [
+          "apollo-site-e1dc0"
+        ],
+        "learn": [
+          "apollo-learn"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

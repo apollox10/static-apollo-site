@@ -194,21 +194,23 @@
             height: 100%;
             z-index: 10000000;
         }
+
+        .cont-hide{
+            z-index: 0;
+            display: none;
+            color: var(--tech);
+        }
+        .cont-show{
+            position: fixed;
+            display: flex;
+            align-items: center;
+            color: var(--nav);
+            background-color: var(--nav);
+            height: 61px;
+            width: 100%;
+            z-index: 20;
+        }
     }
 
-    .cont-hide{
-        z-index: 0;
-        display: none;
-        color: var(--tech);
-    }
-    .cont-show{
-        position: fixed;
-        display: flex;
-        align-items: center;
-        color: var(--nav);
-        background-color: var(--nav);
-        height: 61px;
-        width: 100%;
-        z-index: 20;
-    }
+    
 </style>

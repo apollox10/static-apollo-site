@@ -1,5 +1,6 @@
 {
-  "hosting": {
+  "hosting": [{
+    "target": "nexus",
     "public": "build",
     "ignore": [
       "firebase.json",
@@ -11,5 +12,20 @@
       "destination": "/index.html"
     } ],
     "cleanUrls": true
+  },
+  {
+    "target": "learn",
+    "public": "learn/build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [ {
+      "source": "**",
+      "destination": "/index.html"
+    } ],
+    "cleanUrls": true
   }
+  ]
 }
