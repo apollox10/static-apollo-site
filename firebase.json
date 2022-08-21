@@ -10,7 +10,12 @@
     "rewrites": [ {
       "source": "**",
       "destination": "/index.html"
-    } ],
+    },
+    {
+      "source": "/learn",
+      "destination": "https://learn.apollonexus.com/"
+    }
+   ],
     "cleanUrls": true
   },
   {

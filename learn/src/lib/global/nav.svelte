@@ -1,8 +1,13 @@
 <script>
-    export let show = false;
-</script>
+    export let show = false, staticNav = false;
 
-<nav>
+    function openNav(){
+        show = !show;
+        staticNav = !staticNav;
+    }
+</script>   
+
+<nav class="{staticNav ? "static-nav" : ""}">
     <div class="title-container">
         <a href="/" class="title">Apollo Learn</a>
     </div>
@@ -11,10 +16,10 @@
         <a href="https://apollonexus.com/tech">Tecnología</a>
         <a href="https://apollonexus.com/news">Noticias</a>
         <a href="https://apollonexus.com/games">Juegos</a>
-        <a href="/" class="learn">Learn</a>
+        <a href="/" target="_self" class="learn">Learn</a>
         <a href="https://apollonexus.com/about">Sobre Apollo</a>
     </div>
-    <div class="icon-container" on:click="{() => show = !show}" >
+    <div class="icon-container" on:click={openNav} >
         <img src="/nav-menu.svg" alt="Menu">
     </div>
 </nav>
@@ -88,8 +93,12 @@
         nav{
             padding: 0;
             width: 100%;
-            position: fixed;
             top: 0px;
+        }
+
+        .static-nav{
+            position: sticky;
+            z-index: 1;
         }
 
         .title-container{
@@ -99,15 +108,17 @@
         .links-container{
             flex-direction: column;
             position: fixed;
+
             align-items: center;
-            justify-content: space-around;
+            justify-content: space-between;
+            overflow: auto;
 
             width: 100%;
-            height: calc(100vh - 100px);
+            height: calc(100% - 100px);
             top: 60px;
 
             padding: 20px 0;
-
+            gap: 20px;
             background-color: var(--black);
         }
 

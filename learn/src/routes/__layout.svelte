@@ -11,3 +11,7 @@ import Footer from "$lib/global/footer.svelte";
 
 <Footer />
 
+<style>
+
+</style>
+

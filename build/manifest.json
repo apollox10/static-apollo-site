@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-5d3fbf39.js",
+    "file": "_app/immutable/start-058a5dbf.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -374,56 +374,56 @@
     "file": "_app/immutable/assets/__layout-ff2b5924.css",
     "src": "src/routes/__layout.css"
   },
-  "src/routes/learn/cursos/programacion-desde-cero/index.css": {
-    "file": "_app/immutable/assets/index-5ef0fe0d.css",
-    "src": "src/routes/learn/cursos/programacion-desde-cero/index.css"
+  "src/routes/learn/cursos/index.css": {
+    "file": "_app/immutable/assets/index-f91760b4.css",
+    "src": "src/routes/learn/cursos/index.css"
   },
   "src/routes/news/__layout@root.css": {
     "file": "_app/immutable/assets/__layout@root-ff2b5924.css",
     "src": "src/routes/news/__layout@root.css"
   },
+  "src/routes/learn/otros-medios/index.css": {
+    "file": "_app/immutable/assets/index-9ad792af.css",
+    "src": "src/routes/learn/otros-medios/index.css"
+  },
+  "icon-card.css": {
+    "file": "_app/immutable/assets/icon-card-6a857fe0.css",
+    "src": "icon-card.css"
+  },
   "src/routes/about/__error.css": {
     "file": "_app/immutable/assets/__error-21aeec0b.css",
     "src": "src/routes/about/__error.css"
-  },
-  "WIP.css": {
-    "file": "_app/immutable/assets/WIP-940cdd1c.css",
-    "src": "WIP.css"
   },
   "src/routes/learn/index.css": {
     "file": "_app/immutable/assets/index-5c411972.css",
     "src": "src/routes/learn/index.css"
   },
+  "medios-list.css": {
+    "file": "_app/immutable/assets/medios-list-162a38e4.css",
+    "src": "medios-list.css"
+  },
   "src/routes/learn/cursos/programacion-desde-cero/instalando-cpp-y-vs-code.css": {
     "file": "_app/immutable/assets/instalando-cpp-y-vs-code-f8bc84c9.css",
     "src": "src/routes/learn/cursos/programacion-desde-cero/instalando-cpp-y-vs-code.css"
-  },
-  "src/routes/learn/cursos/index.css": {
-    "file": "_app/immutable/assets/index-f91760b4.css",
-    "src": "src/routes/learn/cursos/index.css"
-  },
-  "cursos-list.css": {
-    "file": "_app/immutable/assets/cursos-list-ea1fc4ea.css",
-    "src": "cursos-list.css"
   },
   "footer.css": {
     "file": "_app/immutable/assets/footer-05afb04f.css",
     "src": "footer.css"
   },
-  "src/routes/learn/otros-medios/index.css": {
-    "file": "_app/immutable/assets/index-9ad792af.css",
-    "src": "src/routes/learn/otros-medios/index.css"
+  "cursos-list.css": {
+    "file": "_app/immutable/assets/cursos-list-ea1fc4ea.css",
+    "src": "cursos-list.css"
   },
-  "medios-list.css": {
-    "file": "_app/immutable/assets/medios-list-162a38e4.css",
-    "src": "medios-list.css"
+  "WIP.css": {
+    "file": "_app/immutable/assets/WIP-940cdd1c.css",
+    "src": "WIP.css"
   },
   "src/routes/learn/__layout@root.css": {
     "file": "_app/immutable/assets/__layout@root-3241c811.css",
     "src": "src/routes/learn/__layout@root.css"
   },
-  "icon-card.css": {
-    "file": "_app/immutable/assets/icon-card-6a857fe0.css",
-    "src": "icon-card.css"
+  "src/routes/learn/cursos/programacion-desde-cero/index.css": {
+    "file": "_app/immutable/assets/index-5ef0fe0d.css",
+    "src": "src/routes/learn/cursos/programacion-desde-cero/index.css"
   }
 }
