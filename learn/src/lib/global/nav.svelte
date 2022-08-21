@@ -1,5 +1,5 @@
 <script>
-    export let show = false, staticNav = false;
+    let show = false, staticNav = false;
 
     function openNav(){
         show = !show;
@@ -16,7 +16,7 @@
         <a href="https://apollonexus.com/tech">Tecnología</a>
         <a href="https://apollonexus.com/news">Noticias</a>
         <a href="https://apollonexus.com/games">Juegos</a>
-        <a href="/" target="_self" class="learn">Learn</a>
+        <a href="/" target="_self" class="learn">Aprendizaje</a>
         <a href="https://apollonexus.com/about">Sobre Apollo</a>
     </div>
     <div class="icon-container" on:click={openNav} >

@@ -22,7 +22,7 @@
         <a class="tech-link nav-link" href="/tech">Tecnología</a>
         <a class="news-link nav-link" href="/news">Noticias</a>
         <a class="games-link nav-link" href="/games">Juegos</a>
-        <a class="learn-link nav-link" href="/learn">Aprendizaje</a>
+        <a class="learn-link nav-link" href="https://learn.apollonexus.com/">Aprendizaje</a>
         <a class="about-link nav-link" href="/about">Proyecto Apollo</a>
     </div>
     <div class="icon-container" on:click="{() => show = !show}">
