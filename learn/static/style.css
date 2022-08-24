@@ -15,22 +15,22 @@
 }
 
 ::-webkit-scrollbar-track{
-    background: rgb(255, 255, 255, 1);
+    background: rgb(255, 255, 255, .1);
 }
 
 ::-webkit-scrollbar-thumb{
-    background: rgb(255, 255, 255, 0);
+    background: rgb(255, 255, 255, 0.1);
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background: rgb(255, 255, 255, .3);
+    background: rgb(255, 255, 255, .2);
     
 }
 
 body{
     margin: 0;
     padding: 0;
-    color: var(--darkGray);
-    background-color: var(--white);
+    color: var(--white);
+    background-color: var(--black);
 }

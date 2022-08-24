@@ -7,9 +7,7 @@
     <link rel="icon" type="image/x-icon" href="/head-icons/about.png">
 </svelte:head>
 
-<header>
-    <Nav 
-    class = "nav"
+<Nav 
     title = "Sobre Apollo"
     route = "/about"
 
@@ -34,8 +32,7 @@
     --games-background = "var(--darkGray)"
     --learn-hover = "var(--white)"
     --learn-background = "var(--darkGray)"  
-    />
-</header>
+/>
 <main>
     <slot></slot>
 </main>

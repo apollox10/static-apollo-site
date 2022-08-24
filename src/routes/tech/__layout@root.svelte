@@ -7,9 +7,7 @@
     <link rel="icon" type="image/x-icon" href="/head-icons/tech.png">
 </svelte:head>
 
-<header>
-    <Nav 
-    class = "nav"
+<Nav 
     title = "Apollo Tech"
     route = "/tech"
 
@@ -38,8 +36,7 @@
 
     --about-hover = "var(--white)"
     --about-background = "var(--darkGray)"
-    />
-</header>
+/>
 <main>
     <slot></slot>
 </main>

@@ -8,38 +8,38 @@
     <link rel="icon" type="image/x-icon" href="/head-icons/homepage.png">
 </svelte:head>
 
-<header>
-    <Nav 
-        title = "Apollox"
-        route = "/"
-        
-        --nav = "white"
-        --link-color = "var(--homepage)"
-        --link-hover-color = "var(--white)"
-        --link-hover-background = "var(--darkGray)"
-        --title-mobile = "var(--darkGray)"
-        --icon-hover = "var(--white)"
-        --icon-background ="var(--darkGray)"
 
-        --homepage-hover = "var(--white)"
-        --homepage-background = "var(--homepage)"
+<Nav 
+    title = "Apollox"
+    route = "/"
+    
+    --nav = "white"
+    --link-color = "var(--homepage)"
+    --link-hover-color = "var(--white)"
+    --link-hover-background = "var(--darkGray)"
+    --title-mobile = "var(--darkGray)"
+    --icon-hover = "var(--white)"
+    --icon-background ="var(--darkGray)"
 
-        --tech-hover = "var(--tech)"
-        --tech-background = "var(--darkGray)"
+    --homepage-hover = "var(--white)"
+    --homepage-background = "var(--homepage)"
 
-        --news-hover = "var(--news)"
-        --news-background = "var(--darkGray)"
+    --tech-hover = "var(--tech)"
+    --tech-background = "var(--darkGray)"
 
-        --games-hover = "var(--games)"
-        --games-background = "var(--darkGray)"
+    --news-hover = "var(--news)"
+    --news-background = "var(--darkGray)"
 
-        --learn-hover = "var(--learn)"
-        --learn-background = "var(--darkGray)"
+    --games-hover = "var(--games)"
+    --games-background = "var(--darkGray)"
 
-        --about-hover = "var(--about)"
-        --about-background = "var(--darkGray)"
-    />
-</header>
+    --learn-hover = "var(--learn)"
+    --learn-background = "var(--darkGray)"
+
+    --about-hover = "var(--about)"
+    --about-background = "var(--darkGray)"
+/>
+
 <main>
     <slot></slot>
 </main>

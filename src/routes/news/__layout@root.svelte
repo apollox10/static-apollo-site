@@ -8,9 +8,8 @@
 </svelte:head>
 
 
-<header>
-    <Nav 
-    class = "nav"
+
+<Nav 
     title = "Apollo News"
     route = "/news"
 
@@ -35,8 +34,8 @@
     --learn-background = "var(--darkGray)"
     --about-hover = "var(--white)"
     --about-background = "var(--darkGray)"
-    />
-</header>
+/>
+
 <main>
     <slot></slot>
 </main>

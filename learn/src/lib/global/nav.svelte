@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     let show = false, staticNav = false;
 
     function openNav(){
@@ -17,7 +17,7 @@
         <a href="https://apollonexus.com/news">Noticias</a>
         <a href="https://apollonexus.com/games">Juegos</a>
         <a href="/" target="_self" class="learn">Aprendizaje</a>
-        <a href="https://apollonexus.com/about">Sobre Apollo</a>
+        <a href="https://apollonexus.com/about">Sobre Apollox</a>
     </div>
     <div class="icon-container" on:click={openNav} >
         <img src="/nav-menu.svg" alt="Menu">
@@ -62,10 +62,6 @@
 
     @media only screen and (min-width: 1000px){
 
-        .icon-container{
-            display: none;
-        }
-
         .links-container{
             gap: 10px;
         }
@@ -84,6 +80,10 @@
         .links-container > .learn:hover{
             color: var(--darkGray);
             background-color: var(--white);
+        }
+
+        .icon-container{
+            display: none;
         }
 
     }
@@ -124,17 +124,21 @@
 
         .show{
             top: 60px;
-            transition: 1s;
+            transition: .6s;
         }
 
         .hide{
             top: 100%;
-            transition: 1s;
+            transition: .6s;
         }
 
         .links-container > a {
             color: var(--white);
             font-size: 1.5rem;
+            text-align: center;
+
+            width: 15rem;
+            border-radius: 30px;
         }
 
         .links-container > a:hover{
@@ -153,7 +157,7 @@
             border-radius: 10px;
         }
 
-        .icon-container:hover{
+        .icon-container:hover, .icon-container:active{
             filter: invert(100%);
             background-color: rgba(250, 250, 255, .15);
 

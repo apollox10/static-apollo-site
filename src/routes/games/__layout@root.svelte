@@ -7,8 +7,7 @@
     <link rel="icon" type="image/x-icon" href="/head-icons/games.png">
 </svelte:head>
 
-<header>
-    <Nav 
+<Nav 
     title = "Apollo Games"
     route = "/games"
 
@@ -33,8 +32,8 @@
     --learn-background = "var(--darkGray)"
     --about-hover = "var(--white)"
     --about-background = "var(--darkGray)"
-    />
-</header>
+/>
+
 <main>
     <slot></slot>
 </main>

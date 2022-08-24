@@ -1,78 +1,61 @@
-<script>
-    export let title, route
-    let show = false;
+<script type="ts">
+    export let title: string, route: string
+    let show = false, staticNav = false;
+
+    function openNav(){
+        show = !show;
+        staticNav = !staticNav;
+    }
 </script>
-<nav class="nav">
-    <div class="{show ? "cont-show" : "cont-hide"}">
-        <div class="title-container">
-            <a class="title" href="{route}">{title}</a>
-        </div>
-        <div class="icon-container" on:click="{() => show = !show}">
-            <span class="material-symbols-outlined">
-            menu
-            </span>
-        </div>
-    </div>
+<nav class="{staticNav ? "static-nav" : ""}">
     <div class="title-container">
-        <a class="title" href="{route}">{title}</a>
+        <a class= "title" href="{route}">{title}</a>
     </div>
     <!--Navegation links-->
-    <div class="links-container {show ? "show" : "hide"}"  on:mouseup="{() => show = !show}">
-        <a class="homepage-link nav-link" href="/">Inicio</a>
-        <a class="tech-link nav-link" href="/tech">Tecnología</a>
-        <a class="news-link nav-link" href="/news">Noticias</a>
-        <a class="games-link nav-link" href="/games">Juegos</a>
-        <a class="learn-link nav-link" href="https://learn.apollonexus.com/">Aprendizaje</a>
-        <a class="about-link nav-link" href="/about">Proyecto Apollo</a>
+    <div class="links-container {show ? "show" : "hide"}">
+        <a class="homepage-link" href="/" target="_self">Nexus</a>
+        <a class="tech-link" href="/tech" target="_self">Tecnología</a>
+        <a class="news-link" href="/news" target="_self">Noticias</a>
+        <a class="games-link" href="/games" target="_self">Juegos</a>
+        <a class="learn-link" href="https://learn.apollonexus.com/" target="_self">Aprendizaje</a>
+        <a class="about-link" href="/about" target="_self">Sobre Apollox</a>
     </div>
-    <div class="icon-container" on:click="{() => show = !show}">
-        <span class="material-symbols-outlined">
-        menu
-        </span>
+    <div class="icon-container" on:click={openNav}>
+        <img src="/nav-menu.svg" alt="Menu">
     </div>
     
 </nav>
 
 <style>
 
-    span{
-        text-align: center;
-        font-size: 40px;
-        color: var(--link-color);
-    }
-
-    span:hover{
-        color: var(--icon-hover);
-    }
-    .nav{
+    nav{
         display: flex;
-        width: 100%;
         align-items: center;
+        justify-content: space-between;
+
+        width: calc(100% - 20px);
         min-width: 350px;
-        height: 61px;
+        height: 60px;
+        padding: 0 10px;
+
         background-color: var(--nav);
         box-shadow: 0px 3px 5px rgb(0, 0, 0, 0.1);
     }
 
-    .title-container{
-        padding-top: 8px;
-        padding-bottom: 13px;
-        margin-left: 10px;
-        height: 40px;
-        flex: 1;
-        z-index: 10;
+    a{
+        text-decoration: none;
+        font-weight: 600;
+        color: var(--link-color);
     }
 
-    .title:link, .title:visited{
+    .title-container{
+        height: 40px;
+        padding: 7px 0 13px 0;
+    }
+
+    .title{
         font-size: 2rem;
         font-weight: bold;
-    }
-
-    a:link, a:visited{
-        text-decoration: none;
-        font-weight: bold;
-        padding: 5px 10px;
-        border-radius: 30px;
     }
 
     .links-container{
@@ -80,19 +63,14 @@
     }
     
     @media only screen and (min-width:1000px){
- 
-        a:link, a:visited{
-            color:var(--link-color);
-        }
-        
+         
         .links-container{
             gap: 10px;
-            padding-right: 10px;
         }
 
-        .nav-link:hover{
-            color: var(--link-hover-color);
-            background-color: var(--link-hover-background);
+        .links-container > a{
+            padding: 5px 10px;
+            border-radius: 30px;
         }
 
         .homepage-link:hover{
@@ -129,94 +107,85 @@
             display: none;
         }
 
-        .cont-hide, .cont-show{
-            display: none;
-        }
-
-
     }
 
     @media only screen and (max-width : 1000px){
         
+        nav{
+            padding: 0;
+            width: 100%;
+            top: 0px;
+        }
+
+        .static-nav{
+            position: sticky;
+            z-index: 1;
+        }
+
+        .title-container{
+            margin-left: 10px;
+        }
+
         .title:link, .title:visited{
             color: var(--title-mobile);
         }
 
-        a:link, a:visited{
-            color : var(--white);
-        }
-
         .links-container{
-            background-color: var(--darkGray);
-            display: flex;
             flex-direction: column;
-            overflow: auto;
-            gap: 50px;
             position: fixed;
-            width: 100%;
-            height: calc(100vh - 60px);
-            top: calc(60px + 100%);
-            padding: 50px 0;
+
             align-items: center;
-            font-size: 25px;
-            z-index: 1;
-            transition: 0.5s;
+            justify-content: space-between;
+            overflow: auto;
+
+            width: 100%;
+            height: calc(100% - 100px);
+            top: 60px;
+
+            padding: 20px 0;
+            gap: 20px;
+
+            background-color: var(--black);
+
         }
 
-        .nav-link{
-            width: 15rem;
+        .show{
+            top: 60px;
+            transition: .6s;
+        }
+
+        .hide{
+            top: 100%;
+            transition: .6s;
+        }
+
+        .links-container > a {
+            color: var(--white);
+            font-size: 1.5rem;
             text-align: center;
+
+            width: 15rem;
+            border-radius: 30px;
         }
 
-        .nav-link:hover{
+        .links-container > a:hover{
             color: var(--darkGray);
             background-color: var(--white);
-        } 
+        }
 
         .icon-container{
-            display: flex;
-            align-items: center;
-            justify-content: center;
             width: 50px;
-            margin-right: 10px;
-            z-index: 1;
-            transition: .5s;
+            margin: 5px;
             border-radius: 10px;
         }
 
         .icon-container:hover, .icon-container:active{
-            background-color: var(--icon-background);
-            transition: .5s;
+            filter: invert(100%);
+            background-color: rgba(250, 250, 255, .15);
+
+            cursor: pointer;
         }
 
-        .show{
-            top: 61px;
-            transition: 0.5s;
-       
-            width: 100%;
-            height: 100%;
-            z-index: 10000000;
-        }
-
-        .cont-show{
-            position: fixed;
-            display: flex;
-            align-items: center;
-            color: var(--nav);
-            background-color: var(--nav);
-            height: 61px;
-            width: 100%;
-            z-index: 20;
-        }
-
-        .cont-hide{
-            z-index: 0;
-            display: none;
-            color: var(--tech);
-        }
     }
 
-    
-    
-    
 </style>

@@ -1,7 +1,7 @@
-<script>
-// @ts-ignore
+<script lang="typescript">
+
 import Nav from "$lib/global/nav.svelte";
-// @ts-ignore
+
 import Footer from "$lib/global/footer.svelte";
 </script>
 

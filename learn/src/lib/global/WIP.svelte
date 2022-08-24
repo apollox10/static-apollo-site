@@ -1,9 +1,3 @@
-<script>
-
-</script>
-
-
-
 <div class="WIP">
     <h1>
         Esta página aún está en progreso, por favor regresa mas tarde.
