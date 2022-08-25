@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
     import ListCard from "./list-card.svelte";
-    export let cards = []
+    export let cards:any = []
 </script>
 
 <div name="cards" class="cards">

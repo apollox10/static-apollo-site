@@ -1,9 +1,10 @@
-<script lang="typescript">
+<script lang="ts">
 
-import Nav from "$lib/global/nav.svelte";
+    import Nav from "$lib/global/nav.svelte";
 
-import Footer from "$lib/global/footer.svelte";
+    import Footer from "$lib/global/footer.svelte";
 </script>
+
 
 <Nav />
 

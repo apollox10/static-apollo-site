@@ -3,7 +3,7 @@
         Esta página aún está en progreso, por favor regresa mas tarde.
     </h1>
 
-    <img src="https://firebasestorage.googleapis.com/v0/b/apollo-site-e1dc0.appspot.com/o/global%2FWIP%2FWIP-icon.png?alt=media&token=347b8a2c-7bf0-4b00-bddb-93792f3dd726" alt="En proceso">
+    <img src="/WIP-icon.png" alt="En proceso">
 
     <h2>El apoyo va en camino...</h2>
 

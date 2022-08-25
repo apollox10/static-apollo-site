@@ -2,7 +2,8 @@
     export let  title = "Titulo", 
                 image = "https://www.reshot.com/preview-assets/icons/3GNMVZCSDU/coding-3GNMVZCSDU.svg",
                 url = "",
-                external = false    
+                external = false,
+                titleCentered = false
 </script>
 
 <a href="{url}" class="link" target="{external ? "_blank" : "_self"}">

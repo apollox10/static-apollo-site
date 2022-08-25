@@ -2,16 +2,18 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="./favicon.png" />
+		<link rel="icon" href="./learn-favicon.png" />
 		<link rel='stylesheet' href='./style.css'>
 		<meta name="viewport" content="width=device-width" />
-		<meta http-equiv="content-security-policy" content="">
+		<meta http-equiv="content-security-policy" content=""><title>Apollo Learn</title>
 	<link href="/_app/immutable/assets/__layout-5f8f03e1.css" rel="stylesheet">
-	<link href="/_app/immutable/assets/index-940cdd1c.css" rel="stylesheet">
-	<link rel="modulepreload" href="/_app/immutable/start-298c4f46.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/index-5264fca9.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-475e9a38.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/index.svelte-489d5e8f.js">
+	<link href="/_app/immutable/assets/index-e6866f72.css" rel="stylesheet">
+	<link href="/_app/immutable/assets/courses-list-18bf8a01.css" rel="stylesheet">
+	<link rel="modulepreload" href="/_app/immutable/start-fb706dd8.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-0aa11635.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-d0c0f925.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/index.svelte-e82c2240.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/courses-list-90193601.js">
 	</head>
 	<body>
 		<div>
@@ -27,12 +29,27 @@
     <div class="icon-container svelte-156yg3h"><img src="/nav-menu.svg" alt="Menu"></div>
 </nav>
 
-<div class="WIP svelte-yto3z4"><h1 class="svelte-yto3z4">Esta página aún está en progreso, por favor regresa mas tarde.
-    </h1>
 
-    <img src="https://firebasestorage.googleapis.com/v0/b/apollo-site-e1dc0.appspot.com/o/global%2FWIP%2FWIP-icon.png?alt=media&token=347b8a2c-7bf0-4b00-bddb-93792f3dd726" alt="En proceso" class="svelte-yto3z4">
 
-    <h2 class="svelte-yto3z4">El apoyo va en camino...</h2>
+<div class="main svelte-kgajhx"><div class="list"><h1 slot="title"><a href="/cursos-programacion" class="svelte-kgajhx">Cursos de programación</a></h1>
+    <div class="cards svelte-yemfhv" name="cards"><div style="display: contents; --title-color:var(--learn); --cursor:pointer;"><div class="card svelte-d56vbt"><a href="/cursos-programacion/programacion-desde-cero" target="_self" class="svelte-d56vbt"><h1 class=" svelte-d56vbt">Programación desde 0</h1>
+        <div class="details svelte-d56vbt"><div class="image-container svelte-d56vbt"><img src="https://www.reshot.com/preview-assets/icons/3GNMVZCSDU/coding-3GNMVZCSDU.svg" alt="Programación desde 0" class="svelte-d56vbt"></div>
+            <p>Curso de programación desde cero, donde cualquiera, sin tener conocimiento previo puede adentrarse en el mundo de la programación. El lenguaje de programación utilizado es C++. No es recomendado para personas que ya sepan programar, a menos de que quieran reforzar conocimientos o aprender sobre C y C++.</p></div></a>
+</div></div><div style="display: contents; --title-color:rgb(255, 159, 0); --cursor:not-allowed;"><div class="card svelte-d56vbt"><a href="#" target="_self" class="svelte-d56vbt"><h1 class=" svelte-d56vbt">(Próximamente) Programación Orientada a Objetos e Interfaces Gráficas</h1>
+        <div class="details svelte-d56vbt"><div class="image-container svelte-d56vbt"><img src="https://www.reshot.com/preview-assets/icons/8XE5WD67JA/programming-8XE5WD67JA.svg" alt="(Próximamente) Programación Orientada a Objetos e Interfaces Gráficas" class="svelte-d56vbt"></div>
+            <p>Curso de nivel "intermedio" enfocado a aprender sobre la Programación Orientada a objetos usando C++ y Java, y utilizar esos conocimientos para diseñar interfaces gráficas en Python y C#. No recomendado para principiantes, los alumnos deberán tener al menos conocimientos básicos de programación antes de tomarlo.</p></div></a>
+</div></div></div>
+
+</div>
+    <div class="list"><h1 slot="title">Medios recomendados</h1>
+
+    <div class="cards svelte-gwofks" name="cards"><div style="display: contents; --title-color:var(--white);"><div class="card svelte-5c0u3m"><a href="https://www.freecodecamp.org/" target="_blank" class="svelte-5c0u3m"><h1 class="text-centered svelte-5c0u3m">freeCodeCamp</h1>
+        <div class="details svelte-5c0u3m"><img src="/otros-medios/fcc.svg" alt="freeCodeCamp" class="svelte-5c0u3m"></div></a>
+</div></div><div style="display: contents; --title-color:var(--white);"><div class="card svelte-5c0u3m"><a href="https://www.udemy.com/" target="_blank" class="svelte-5c0u3m"><h1 class="text-centered svelte-5c0u3m">Udemy</h1>
+        <div class="details svelte-5c0u3m"><img src="/otros-medios/udemy.svg" alt="Udemy" class="svelte-5c0u3m"></div></a>
+</div></div></div>
+
+</div>
 
 </div>
 
@@ -40,13 +57,13 @@
 </footer>
 
 
-		<script type="module" data-sveltekit-hydrate="13fu0rc">
-		import { set_public_env, start } from "/_app/immutable/start-298c4f46.js";
+		<script type="module" data-sveltekit-hydrate="3z2z1x">
+		import { set_public_env, start } from "/_app/immutable/start-fb706dd8.js";
 
 		set_public_env({});
 
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="13fu0rc"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="3z2z1x"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,
@@ -55,7 +72,7 @@
 			hydrate: {
 				status: 200,
 				error: null,
-				nodes: [0, 2],
+				nodes: [0, 4],
 				params: {},
 				routeId: ""
 			}
