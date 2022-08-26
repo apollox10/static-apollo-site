@@ -27,6 +27,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"firebase": "^9.9.3"
+		"firebase": "^9.9.3",
+		"workbox-cli": "^6.5.4"
 	}
 }

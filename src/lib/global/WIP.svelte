@@ -1,5 +1,4 @@
 <script lang="ts">
-
     /*
     import "$lib/firebase"
     import { getDownloadURL, getStorage, ref } from "firebase/storage";

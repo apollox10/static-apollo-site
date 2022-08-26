@@ -9,13 +9,20 @@
 	<link href="/_app/immutable/assets/__layout@root-ff2b5924.css" rel="stylesheet">
 	<link href="/_app/immutable/assets/footer-7b2d0c04.css" rel="stylesheet">
 	<link href="/_app/immutable/assets/WIP-940cdd1c.css" rel="stylesheet">
-	<link rel="modulepreload" href="/_app/immutable/start-568a89d7.js">
+	<link rel="modulepreload" href="/_app/immutable/start-9d83ab7f.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/index-236b007c.js">
 	<link rel="modulepreload" href="/_app/immutable/pages/__layout-root.svelte-aae967f1.js">
 	<link rel="modulepreload" href="/_app/immutable/pages/about/__layout@root.svelte-a7ea6536.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/footer-5721bef2.js">
 	<link rel="modulepreload" href="/_app/immutable/pages/about/index.svelte-07acf812.js">
 	<link rel="modulepreload" href="/_app/immutable/chunks/WIP-4057e960.js">
+			<script>
+		if ('serviceWorker' in navigator) {
+			addEventListener('load', function () {
+				navigator.serviceWorker.register('/service-worker.js');
+			});
+		}
+	</script>
 	</head>
 	<body>
 		<div>
@@ -53,7 +60,7 @@
 
 
 		<script type="module" data-sveltekit-hydrate="e2g6wl">
-		import { set_public_env, start } from "/_app/immutable/start-568a89d7.js";
+		import { set_public_env, start } from "/_app/immutable/start-9d83ab7f.js";
 
 		set_public_env({});
 
