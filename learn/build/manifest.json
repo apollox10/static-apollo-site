@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-ba3b2ddb.js",
+    "file": "_app/immutable/start-87e52f88.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -89,20 +89,20 @@
     "file": "_app/immutable/assets/__layout-5f8f03e1.css",
     "src": "src/routes/__layout.css"
   },
-  "src/routes/cursos-programacion/index.css": {
-    "file": "_app/immutable/assets/index-f8c877df.css",
-    "src": "src/routes/cursos-programacion/index.css"
+  "src/routes/cursos-programacion/programacion-desde-cero/index.css": {
+    "file": "_app/immutable/assets/index-940cdd1c.css",
+    "src": "src/routes/cursos-programacion/programacion-desde-cero/index.css"
   },
   "src/routes/index.css": {
     "file": "_app/immutable/assets/index-e6866f72.css",
     "src": "src/routes/index.css"
   },
+  "src/routes/cursos-programacion/index.css": {
+    "file": "_app/immutable/assets/index-f8c877df.css",
+    "src": "src/routes/cursos-programacion/index.css"
+  },
   "courses-list.css": {
     "file": "_app/immutable/assets/courses-list-18bf8a01.css",
     "src": "courses-list.css"
-  },
-  "src/routes/cursos-programacion/programacion-desde-cero/index.css": {
-    "file": "_app/immutable/assets/index-940cdd1c.css",
-    "src": "src/routes/cursos-programacion/programacion-desde-cero/index.css"
   }
 }
