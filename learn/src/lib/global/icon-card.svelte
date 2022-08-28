@@ -7,11 +7,9 @@
 </script>       
 
 <div class="card" >
-    <a href="{url}" target="{external ? "_blank" : "_self"}">
+    <a href="{url}" target="{external ? "_blank" : "_self"}" class="link-container">
         <h1 class="{titleCentered ? "text-centered" : ""}">{title}</h1>
-        <div class="details">
-            <img src="{image}" alt="{title}">
-        </div>
+        <img src="{image}" alt="{title}">
     </a>
 </div>
 
@@ -20,6 +18,13 @@
     a{
         color: var(--white);
         text-decoration: none;
+        display: inline-block;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .card{
@@ -49,17 +54,8 @@
         text-align: center;
     }
 
-    .details{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        gap: 30px;
-    }
-
     img{
-        width: 100px;
-        max-height: 100px;
-        margin: 5px 0;
+        height: 100px;
+        max-width: 100px;
     }
 </style>

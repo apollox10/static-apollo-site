@@ -33,10 +33,8 @@
             <IconCard
                 title = {card.title}
                 titleCentered = {card.titleCentered}
-                text = {card.text}
                 image = {card.image}
                 url = {card.url}
-                external = {card.external}
                 --card-color = {card.color}
                 --text-color = {card.textColor}
                 --title-color = {card.titleColor}
