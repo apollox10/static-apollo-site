@@ -25,6 +25,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+
+        cursor: var(--cursor);
     }
 
     .card{
@@ -46,7 +48,7 @@
     h1{
         margin: 10px 0;
         font-weight: 400;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         color: var(--title-color);
     }
 

@@ -5,7 +5,7 @@
         {
             title: "Programación desde 0",
             text: "Curso de programación desde cero, donde cualquiera, sin tener conocimiento previo puede adentrarse en el mundo de la programación. El lenguaje de programación utilizado es C++. No es recomendado para personas que ya sepan programar, a menos de que quieran reforzar conocimientos o aprender sobre C y C++.",
-            image: "https://www.reshot.com/preview-assets/icons/3GNMVZCSDU/coding-3GNMVZCSDU.svg",
+            image: "/cursos/programacion-desde-cero/course-logo.svg",
             url: "/cursos-programacion/programacion-desde-cero", //"/learn/cursos/programacion-desde-cero"
             titleCentered: false,
             external: false,
@@ -16,7 +16,7 @@
         {
             title: "(Próximamente) Programación Orientada a Objetos e Interfaces Gráficas",
             text: 'Curso de nivel "intermedio" enfocado a aprender sobre la Programación Orientada a objetos usando C++ y Java, y utilizar esos conocimientos para diseñar interfaces gráficas en Python y C#. No recomendado para principiantes, los alumnos deberán tener al menos conocimientos básicos de programación antes de tomarlo.',
-            image: "https://www.reshot.com/preview-assets/icons/8XE5WD67JA/programming-8XE5WD67JA.svg",
+            image: "/cursos/programacion-orientada-a-objetos-e-interfaces/course-logo.svg",
             url: "#",
             titleCentered: false,
             external: false,
