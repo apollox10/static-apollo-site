@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-7164932e.js",
+    "file": "_app/immutable/start-957e8e24.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -17,7 +17,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "_app/immutable/pages/__layout.svelte-d0c0f925.js",
+    "file": "_app/immutable/pages/__layout.svelte-fd3acf9f.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -25,7 +25,7 @@
       "_index-0aa11635.js"
     ],
     "css": [
-      "_app/immutable/assets/__layout-5f8f03e1.css"
+      "_app/immutable/assets/__layout-de1f997f.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
@@ -38,29 +38,29 @@
     ]
   },
   "src/routes/cursos-programacion/index.svelte": {
-    "file": "_app/immutable/pages/cursos-programacion/index.svelte-4fbd3b8c.js",
+    "file": "_app/immutable/pages/cursos-programacion/index.svelte-7aef58db.js",
     "src": "src/routes/cursos-programacion/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-0aa11635.js",
-      "_courses-list-fb9e8d1f.js"
+      "_courses-list-6327c969.js"
     ],
     "css": [
       "_app/immutable/assets/index-f8c877df.css"
     ]
   },
   "src/routes/cursos-programacion/programacion-desde-cero/index.svelte": {
-    "file": "_app/immutable/pages/cursos-programacion/programacion-desde-cero/index.svelte-5e62a30c.js",
+    "file": "_app/immutable/pages/cursos-programacion/programacion-desde-cero/index.svelte-c78de17b.js",
     "src": "src/routes/cursos-programacion/programacion-desde-cero/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-0aa11635.js",
-      "_icon-card-81d55629.js"
+      "_icon-card-a6f93b52.js"
     ],
     "css": [
-      "_app/immutable/assets/index-57d602fb.css"
+      "_app/immutable/assets/index-1902ca8d.css"
     ]
   },
   "src/routes/cursos-programacion/programacion-desde-cero/introduccion/index.svelte": {
@@ -84,14 +84,14 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "_app/immutable/pages/index.svelte-03927f0b.js",
+    "file": "_app/immutable/pages/index.svelte-e86c7cc5.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-0aa11635.js",
-      "_courses-list-fb9e8d1f.js",
-      "_icon-card-81d55629.js"
+      "_courses-list-6327c969.js",
+      "_icon-card-a6f93b52.js"
     ],
     "css": [
       "_app/immutable/assets/index-0d68f690.css"
@@ -100,8 +100,8 @@
   "_index-0aa11635.js": {
     "file": "_app/immutable/chunks/index-0aa11635.js"
   },
-  "_courses-list-fb9e8d1f.js": {
-    "file": "_app/immutable/chunks/courses-list-fb9e8d1f.js",
+  "_courses-list-6327c969.js": {
+    "file": "_app/immutable/chunks/courses-list-6327c969.js",
     "imports": [
       "_index-0aa11635.js"
     ],
@@ -109,8 +109,8 @@
       "_app/immutable/assets/courses-list-18bf8a01.css"
     ]
   },
-  "_icon-card-81d55629.js": {
-    "file": "_app/immutable/chunks/icon-card-81d55629.js",
+  "_icon-card-a6f93b52.js": {
+    "file": "_app/immutable/chunks/icon-card-a6f93b52.js",
     "imports": [
       "_index-0aa11635.js"
     ],
@@ -128,16 +128,24 @@
     ]
   },
   "src/routes/__layout.css": {
-    "file": "_app/immutable/assets/__layout-5f8f03e1.css",
+    "file": "_app/immutable/assets/__layout-de1f997f.css",
     "src": "src/routes/__layout.css"
+  },
+  "courses-list.css": {
+    "file": "_app/immutable/assets/courses-list-18bf8a01.css",
+    "src": "courses-list.css"
+  },
+  "src/routes/cursos-programacion/programacion-desde-cero/index.css": {
+    "file": "_app/immutable/assets/index-1902ca8d.css",
+    "src": "src/routes/cursos-programacion/programacion-desde-cero/index.css"
+  },
+  "src/routes/index.css": {
+    "file": "_app/immutable/assets/index-0d68f690.css",
+    "src": "src/routes/index.css"
   },
   "src/routes/cursos-programacion/index.css": {
     "file": "_app/immutable/assets/index-f8c877df.css",
     "src": "src/routes/cursos-programacion/index.css"
-  },
-  "src/routes/cursos-programacion/programacion-desde-cero/index.css": {
-    "file": "_app/immutable/assets/index-57d602fb.css",
-    "src": "src/routes/cursos-programacion/programacion-desde-cero/index.css"
   },
   "WIP.css": {
     "file": "_app/immutable/assets/WIP-940cdd1c.css",
@@ -146,13 +154,5 @@
   "icon-card.css": {
     "file": "_app/immutable/assets/icon-card-5acdba61.css",
     "src": "icon-card.css"
-  },
-  "src/routes/index.css": {
-    "file": "_app/immutable/assets/index-0d68f690.css",
-    "src": "src/routes/index.css"
-  },
-  "courses-list.css": {
-    "file": "_app/immutable/assets/courses-list-18bf8a01.css",
-    "src": "courses-list.css"
   }
 }
