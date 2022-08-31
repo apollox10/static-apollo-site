@@ -1,6 +1,6 @@
 <script lang="ts">
     export let  title = "Title",
-                image = "https://www.reshot.com/preview-assets/icons/XHLENYATPB/world-error-XHLENYATPB.svg",
+                image = "/error.svg",
                 url = "#",
                 titleCentered = false,
                 external = false

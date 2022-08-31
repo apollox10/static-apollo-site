@@ -14,12 +14,10 @@
     a{
         text-decoration: none;
         color: var(--learn);
-        filter: brightness(85%);
     }
 
     a:hover{
-        color: var(--black);
-        font-weight: 600;
+        color: var(--white);
     }
 
 </style>

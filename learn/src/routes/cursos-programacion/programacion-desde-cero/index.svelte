@@ -5,7 +5,7 @@
     let cards = [
         {
             title: "1. Introducción",
-            image: "https://www.reshot.com/preview-assets/icons/4YWGTKJZUP/startup-4YWGTKJZUP.svg",
+            image: "/cursos-programacion/programacion-desde-cero/introduccion/cohete.svg",
             url: "/cursos-programacion/programacion-desde-cero/introduccion",
             titleCentered: true,
             external: false,
@@ -13,7 +13,7 @@
         },
         {
             title: "2. Variables y Tipos de Datos",
-            image: "/cursos/programacion-desde-cero/variables-y-tipos-de-datos/pi.svg",
+            image: "/cursos-programacion/programacion-desde-cero/variables-y-tipos-de-datos/pi.svg",
             url: "/cursos-programacion/programacion-desde-cero/variables-y-tipos-de-datos",
             titleCentered: true,
             external: false,
@@ -24,7 +24,7 @@
     let otherCards:any = [
         {
             title: "(Próximamente) Programación Orientada a Objetos e Interfaces Gráficas",
-            image: "/cursos/programacion-orientada-a-objetos-e-interfaces/course-logo.svg",
+            image: "/cursos-programacion/programacion-orientada-a-objetos-e-interfaces/oop-logo.svg",
             url: "#",
             titleCentered: false,
             external: false,
@@ -96,7 +96,7 @@
         margin: 30px 15px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
+        gap: 40px;
     }
 
     article{
